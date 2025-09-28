@@ -89,3 +89,4 @@ console.log(res4);  // Salida: 2 (el menor de los tres números)
 // devolver la suma del primero y el tercero y dividir el resultado del ultimo
 let res6 = procesarTres(3, 2, 4, (n1, n2, n3) => (n1 + n3) / n2);
 console.log(res5);  // Salida: 3.5 ((3 + 4) / 2) 
+
