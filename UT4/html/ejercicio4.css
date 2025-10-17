@@ -1,6 +1,44 @@
-.scrollable-table {
-            max-height: 400px; /* Altura máxima antes de mostrar scroll */
-            overflow-y: auto;   /* Activar scroll vertical */
-            border: 1px solid #dee2e6; /* Borde suave para mejor UX */
-            border-radius: 0.25rem;
-        }
+/*css facilitado por ia*/
+
+.titulo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.btn-cargar {
+    display: block;
+    margin: 20px auto;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-cargar:hover {
+    background-color: #e9ecef;
+}
+
+.tabla-container {
+    margin: 20px auto;
+    max-width: 90%;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.table th {
+    background-color: #e3f2fd;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+#tablaRestaurantes tbody td:first-child {
+    background-color: #d1f2eb; /* Verde agua claro */
+    color: #155e59; /* Texto más oscuro para contraste */
+    font-weight: bold;
+}
