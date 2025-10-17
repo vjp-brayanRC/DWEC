@@ -1,0 +1,6 @@
+.scrollable-table {
+            max-height: 400px; /* Altura máxima antes de mostrar scroll */
+            overflow-y: auto;   /* Activar scroll vertical */
+            border: 1px solid #dee2e6; /* Borde suave para mejor UX */
+            border-radius: 0.25rem;
+        }
