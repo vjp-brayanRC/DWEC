@@ -17,6 +17,7 @@ let discoMusica = {
 // pintamos el disco de música
 console.log(discoMusica.getInfo());
 
+
 // Una calle de una ciudad
 let calle = {
     nombre: "La Batcueva",
@@ -34,6 +35,7 @@ let calle = {
 // pintamos la calle
 console.log(calle.getInfo());
 
+
 // Un coche
 let coche = {
     modelo: "Batmóvil",
@@ -50,12 +52,14 @@ let coche = {
             "=== Coche ===\n" +
             "Modelo: " + this.modelo + "\n" +
             "Marca: " + this.marca.tipo + " (Desde " + this.marca.añoCreacion + ")\n" +
-            "Dueño:\n  Nombre: " + this.dueño.nombre + "\n  Edad: " + this.dueño.edad
+            "Dueño:\n  Nombre: " + this.dueño.nombre + "\n" +
+            "  Edad: " + this.dueño.edad
         );
     }
 };
 //pintamos el coche
 console.log(coche.getInfo());
+
 
 // Creacion de el objeto teatro
 let obraTeatro = {
@@ -67,7 +71,35 @@ let obraTeatro = {
         nacimiento: "1961",
         obras: [ "El señor de los anillos", "El Hobbit", "King kong"]
     },
-    actores
-}
+    actores:[
+       { nombre: "Vigo Mortensen", edad: 63, representaciones:45},
+       { nombre: "Martin Freeman", edad: 54, representaciones:30 },
+       { nombre: "Ian McKellen", edad: 81, representaciones:50 }
+    ],
+    getInfo() {
+        let info = "=== Obra de Teatro ===\n";
+        info += "Título: " + this.titulo + "\n";
+        info += "Fecha de Estreno: " + this.estreno + "\n\n";
 
+        info += "--- Director ---\n";
+        info += "Nombre: " + this.director.nombre + " " + this.director.apellido + "\n";
+        info += "Año de nacimiento: " + this.director.nacimiento + "\n";
+        info += "Obras previas:\n";
+        this.director.obras.forEach((obra, index) => {
+            info += "  " + (index + 1) + ". " + obra + "\n";
+        });
 
+        info += "\n--- Actores ---\n";
+        this.actores.forEach((actor, index) => {
+            info += "Actor " + (index + 1) + ":\n";
+            info += "  Nombre: " + actor.nombre + "\n";
+            info += "  Edad: " + actor.edad + "\n";
+            info += "  Representaciones: " + actor.representaciones + "\n";
+        });
+
+        return info;
+    }
+};
+
+// Mostramos por consola
+console.log(obraTeatro.getInfo());
