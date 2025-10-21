@@ -57,12 +57,17 @@ let coche = {
 //pintamos el coche
 console.log(coche.getInfo());
 
+// Creacion de el objeto teatro
 let obraTeatro = {
     titulo: "El señor de los anillos",
-    estreno: "1954",
-    autor:{
-        
-    } 
+    estreno: "2001",
+    director: {
+        nombre: "Peter",
+        apellido: "Jackson",
+        nacimiento: "1961",
+        obras: [ "El señor de los anillos", "El Hobbit", "King kong"]
+    },
+    actores
 }
 
 
