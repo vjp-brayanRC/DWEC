@@ -1,0 +1,70 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal del texto */
+    margin: 40px; /* Espacio alrededor del contenido */
+    background-color: #f4f4f4; /* Color de fondo general gris claro */
+}
+
+/* Contenedor principal de cada post */
+.container {
+    background-color: white; /* Fondo blanco para destacar cada post */
+    padding: 20px; /* Espacio interno dentro del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    margin-bottom: 30px; /* Espacio entre cada contenedor */
+}
+
+/* Estilo del título de cada post */
+.titulo {
+    font-size: 24px; /* Tamaño grande de texto */
+    font-weight: bold; /* Negrita para destacar el título */
+    margin-bottom: 10px; /* Espacio inferior */
+    color: white; /* Color del texto blanco */
+    background-color: black; /* Fondo negro para contraste */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo del contenido del post */
+.contenido {
+    background-color: #fff59d; /* Fondo amarillo claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo del contenido */
+}
+
+/* Contenedor de los botones */
+.botones {
+    display: flex; /* Coloca los botones en línea horizontal */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 20px; /* Espacio debajo del grupo de botones */
+}
+
+/* Estilos de los botones */
+.botones button {
+    padding: 10px 15px; /* Tamaño del botón (alto y ancho interno) */
+    border: none; /* Sin borde visible */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #1976d2; /* Azul principal del botón */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilo del texto donde aparece el nombre del usuario */
+.usuario {
+    margin-bottom: 15px; /* Espacio inferior */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Contenedor de los comentarios */
+.comentarios {
+    border: 2px dashed #ccc; /* Borde punteado gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fafafa; /* Fondo gris muy claro */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo de cada párrafo dentro de los comentarios */
+.comentarios p {
+    margin: 5px 0; /* Pequeño margen arriba y abajo para separar comentarios */
+}
+/*Comnentarios extraidos por copilot*/
