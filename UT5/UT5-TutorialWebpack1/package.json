@@ -1,0 +1,17 @@
+{
+  "name": "ut5-tutorialwebpack1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ./src/js/app.js",
+    "build-dev": "webpack ./src/js/app.js --mode=\"development\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
+  }
+}
