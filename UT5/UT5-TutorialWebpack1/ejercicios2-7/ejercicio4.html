@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+ <!-- Carga el script que maneja la edición de tareas -->
+<script src="ejercicio4.js"></script>
+
+<h1>Editar tarea</h1>
+
+<!-- Formulario para actualizar una tarea existente -->
+<form id="edit-form">
+
+  <!-- Campo obligatorio para indicar el ID de la tarea a modificar -->
+  <label for="taskId">ID de la tarea:</label><br>
+  <input type="text" id="taskId" name="taskId" required><br><br>
+
+  <!-- Campo para modificar el título de la tarea -->
+  <label for="title">Título:</label><br>
+  <input type="text" id="title" name="title"><br><br>
+
+  <!-- Campo para modificar la descripción de la tarea -->
+  <label for="description">Descripción:</label><br>
+  <textarea id="description" name="description"></textarea><br><br>
+
+  <!-- Selector para modificar el estado de la tarea -->
+  <label for="status">Estado:</label><br>
+  <select id="status" name="status">
+    <option value="pendiente">Pendiente</option>
+    <option value="completada">Completada</option>
+  </select><br><br>
+
+  <!-- Campo para modificar la fecha límite -->
+  <label for="dueDate">Fecha límite:</label><br>
+  <input type="date" id="dueDate" name="dueDate"><br><br>
+
+  <!-- Botón para enviar la actualización -->
+  <button type="submit">Actualizar tarea</button>
+</form>
+
+</body>
+</html>

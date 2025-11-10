@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+  <script src="ejercicio3.js"></script>
+  <!-- Formulario para crear una nueva tarea -->
+<form id="task-form">
+  
+  <!-- Título de la tarea (obligatorio) -->
+  <label for="title">Título:</label><br>
+  <input type="text" id="title" name="title" required><br><br>
+
+  <!-- Descripción de la tarea (obligatorio) -->
+  <label for="description">Descripción:</label><br>
+  <textarea id="description" name="description" required></textarea><br><br>
+
+  <!-- Estado de la tarea -->
+  <label for="status">Estado:</label><br>
+  <select id="status" name="status">
+    <option value="pendiente">Pendiente</option>
+    <option value="completada">Completada</option>
+  </select><br><br>
+
+  <!-- Fecha límite de la tarea -->
+  <label for="dueDate">Fecha límite:</label><br>
+  <input type="date" id="dueDate" name="dueDate"><br><br>
+
+  <!-- Botón para enviar el formulario -->
+  <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
