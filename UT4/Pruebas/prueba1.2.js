@@ -1,6 +1,12 @@
 let obj = {
     nombre: "Paco",       
     edad: 32,           
+/**
+ * getInfo(public)
+ * Recupera info de manera confiable. Esta función permite recuperar la información solicitada para su posterior uso
+ * @return "Mi nombres es " + this.nombre + "edad" + this.edad
+ * @author Brayan
+ */
     getInfo () {  
         return "Mi nombres es " + this.nombre + "edad" + this.edad
     }
@@ -30,6 +36,12 @@ var persona = {
             duracion: "2005-2019"
         },
     ],
+/**
+ * getInfo(public)
+ * Obtiene info asegurando coherencia. Se encarga de extraer datos relevantes garantizando coherencia
+ * @return "Mi nombre es " + this.nombre + " y tengo " + this.edad
+ * @author Brayan
+ */
     getInfo() { // This is new syntax in ES2015, in previous versions we should use getInfo: function()
         return "Mi nombre es " + this.nombre + " y tengo " + this.edad;
     }
